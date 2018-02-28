@@ -13,6 +13,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AuthService } from './services/auth.service';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

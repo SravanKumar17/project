@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 ">
+
+            </div>
+            <div class="col-md-8 mt-5">
+                <form>
+                    <table class="table-responsive ">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="email">Email address</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="email" type="email" name="email" size="35" placeholder="Email" class="mb-3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="password">Password</label>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="password" type="password" name="password" size="35" placeholder="Password" class="mb-3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Login With Email" id="login" class="btn btn-info  btn-block mb-3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" id="logout" value="Logout With Email" class="btn btn-info  btn-block mb-3" hidden />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Signup With Email" id="signup" class="btn btn-info  btn-block mb-3" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index1.html" class="btn btn-secondary  btn-block ">
+                                        <fa name="facebook" class="pr-1" style="color:black;"></fa>
+
+                                        Login with Facebook
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index2.html" class="btn btn-secondary  btn-block ">
+                                        <fa name="twitter" class="pr-1" style="color:black;"></fa>
+                                        Login with Twitter
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index3.html" class="btn btn-secondary  btn-block ">
+                                        <fa name="github" class="pr-1" style="color:black;"></fa>
+                                        Login with Github
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="index4.html" class="btn btn-secondary  btn-block " (click)="signInWithGoogle()">
+                                        <fa name="google" class="pr-1" style="color:black;"></fa>
+                                        Login with Google
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+    </div>
+   <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script type="text/javascript">
+
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD29QjKRshUkTFvXXNv4tselVn5WUqqIMo",
+    authDomain: "login-with-email-and-password.firebaseapp.com",
+    databaseURL: "https://login-with-email-and-password.firebaseio.com",
+    projectId: "login-with-email-and-password",
+    storageBucket: "login-with-email-and-password.appspot.com",
+    messagingSenderId: "978059209163"
+  };
+  firebase.initializeApp(config);
+
+var a=10;
+var b=20;
+var sum=a+b;
+console.log(sum);
+
+  const userEmail = document.getElementById('email');
+  const userPassword = document.getElementById('password');
+  const logIn = document.getElementById('login');
+  const signIn = document.getElementById('signup');
+  const logOut = document.getElementById('logout');
+
+  //login event
+
+//sign up
+
+    </script>
+</body>
+</html>
